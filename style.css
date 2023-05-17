@@ -1,15 +1,9 @@
 body {
-    margin: 0;
+    margin: 0 auto;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    background-image: url(/website/uploads/desktop.png);
-    background-repeat: no-repeat;
-    background-color: darkgray;
-    background-blend-mode: soft-light;
-
 }
 
 .topnav {
-    position: fixed;
     top: 0;
     width: 100%;
     background-color: #f2f2f2;
@@ -42,16 +36,21 @@ body {
 }
 
 .home-section {
-    padding-top: 250px;
+    padding-top: 100px;
     display: flex;
     justify-content: center;
     text-align: center;
     color: black;
     font-size: 50px;
     height: 900px;
+    background-image: url(/website/uploads/desktop.png);
+    background-repeat: no-repeat;
+    background-color: darkgray;
+    background-blend-mode: soft-light;
 }
 
 .home-box-inside {
+    /* position: fixed; */
     width: 1000px;
     height: 690px;
     text-align: center;
@@ -61,6 +60,15 @@ body {
     padding-bottom: 50px;
     padding-left: 50px;
     padding-right: 50px;
+}
+
+.home-box-inside p {
+    resize: none;
+    width: 1000px;
+}
+
+.home-box-inside h1 {
+    resize: none;
 }
 
 .project-section {
@@ -94,11 +102,15 @@ body {
 
 .project-description p {
     font-size: 30px;
+    resize: none;
+    width: 1000px;
 }
 
 .project-description a {
     font-size: 30px;
 }
+
+
 
 .contact-info-links {
     display: flex;
